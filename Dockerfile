@@ -1,6 +1,7 @@
 FROM php:7.2-apache
 
-COPY php.ini /usr/local/etc/php/
+COPY limits.ini /usr/local/etc/php/conf.d/
+# COPY opcache.ini /usr/local/etc/php/conf.d/
 COPY converter/ /var/www/html/
 
 EXPOSE 80
