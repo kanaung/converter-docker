@@ -1,3 +1,4 @@
 [submodule "converter"]
 	path = converter
 	url = https://github.com/kanaung/converter.git
+	branch = master
