@@ -5,4 +5,6 @@ COPY limits.ini /usr/local/etc/php/conf.d/
 COPY converter/ /var/www/html/
 COPY api.php /var/www/html/api.php
 
+RUN chown -Rf /var/www/html
+
 EXPOSE 80
