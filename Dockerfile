@@ -7,6 +7,6 @@ COPY api.php /var/www/html/api.php
 
 RUN chown -Rf www-data:www-data /var/www/html
 
-RUN apt-get update && apt install libenchant-dev && docker-php-ext-install enchant
+RUN apt-get update && apt install -yqq libenchant-dev && docker-php-ext-install enchant
 
 EXPOSE 80
